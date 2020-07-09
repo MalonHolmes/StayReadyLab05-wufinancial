@@ -14,7 +14,7 @@ public class MainTest {
     public void usToEuroTest(){
         // Given
         Double input = 1.00; // representing number of US Dollars
-        Double expected = 0.94; // representing number of euros
+        Double expected = 0.88; // representing number of euros
 
         // When
         Double actual = Main.fromUSToEuro(input);
@@ -26,11 +26,11 @@ public class MainTest {
     @Test
     public void euroToUSTest(){
         // Given
-        Double input = 1.00; // // representing number of euros
+        Double input = 1.00; // representing number of euros
         Double expected = 1.13; // representing number of US Dollars
 
         // When
-        Double actual = Main.fromUSToEuro(input);
+        Double actual = Main.fromEuroToUS(input);
 
         // Then
         Assert.assertEquals(expected, actual);
@@ -43,7 +43,7 @@ public class MainTest {
         Double expected = 0.9; // representing number of pounds
 
         // When
-        Double actual = Main.fromUSToEuro(input);
+        Double actual = Main.fromEuroToPound(input);
 
         // Then
         Assert.assertEquals(expected, actual);
@@ -56,7 +56,7 @@ public class MainTest {
         Double expected = 94.57; // representing number of rupees
 
         // When
-        Double actual = Main.fromUSToEuro(input);
+        Double actual = Main.fromPoundToRupee(input);
 
         // Then
         Assert.assertEquals(expected, actual);
@@ -69,7 +69,7 @@ public class MainTest {
         Double expected = 0.018; // representing number of Canadian Dollars
 
         // When
-        Double actual = Main.fromUSToEuro(input);
+        Double actual = Main.fromRupeeToCanadianDollar(input);
 
         // Then
         Assert.assertEquals(expected, actual);
@@ -82,7 +82,7 @@ public class MainTest {
         Double expected = 1.03; // representing number of Singapore Dollars
 
         // When
-        Double actual = Main.fromUSToEuro(input);
+        Double actual = Main.fromCanadianDollarToSingaporeDollar(input);
 
         // Then
         Assert.assertEquals(expected, actual);
@@ -95,7 +95,7 @@ public class MainTest {
         Double expected = 0.67; // representing number of Swiss Francs
 
         // When
-        Double actual = Main.fromUSToEuro(input);
+        Double actual = Main.fromSingaporeDollarToFranc(input);
 
         // Then
         Assert.assertEquals(expected, actual);
@@ -108,7 +108,7 @@ public class MainTest {
         Double expected = 4.55; // representing number of Malaysian Ringgit
 
         // When
-        Double actual = Main.fromUSToEuro(input);
+        Double actual = Main.fromFrancToRinggit(input);
 
         // Then
         Assert.assertEquals(expected, actual);
@@ -121,7 +121,7 @@ public class MainTest {
         Double expected = 25.22; // representing number of Japanese Yen
 
         // When
-        Double actual = Main.fromUSToEuro(input);
+        Double actual = Main.fromRinggitToYen(input);
 
         // Then
         Assert.assertEquals(expected, actual);
@@ -134,7 +134,7 @@ public class MainTest {
         Double expected = 0.065; // representing number of Chinese Yuan Renminbi
 
         // When
-        Double actual = Main.fromUSToEuro(input);
+        Double actual = Main.fromYenToRenminbi(input);
 
         // Then
         Assert.assertEquals(expected, actual);

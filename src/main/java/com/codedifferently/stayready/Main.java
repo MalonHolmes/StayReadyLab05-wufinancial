@@ -3,43 +3,43 @@ package com.codedifferently.stayready;
 public class Main {
 
     public static Double fromUSToEuro(Double USDollars){
-        return null;
+        return USDollars * (0.88 / 1.0);
     }
 
     public static Double fromEuroToUS(Double euros){
-        return null;
+        return euros * (1.13 / 1.0);
     }
 
     public static Double fromEuroToPound(Double euros){
-        return null;
+        return euros * (0.9 / 1.0);
     }
 
     public static Double fromPoundToRupee(Double pounds){
-        return null;
+        return pounds * (94.57 / 1.0);
     }
 
-    public static Double fromRupeeToCanadianDollar(Double rupee){
-        return null;
+    public static Double fromRupeeToCanadianDollar(Double rupees){
+        return rupees * (0.018 / 1.0);
     }
 
     public static Double fromCanadianDollarToSingaporeDollar(Double canDollars){
-        return null;
+        return canDollars * (1.03 / 1.0);
     }
 
     public static Double fromSingaporeDollarToFranc(Double singDollars){
-        return null;
+        return singDollars * (0.67 / 1.0);
     }
 
     public static Double fromFrancToRinggit(Double francs){
-        return null;
+        return francs * (4.55 / 1.0);
     }
 
     public static Double fromRinggitToYen(Double ringgits){
-        return null;
+        return ringgits * (25.22 / 1.0);
     }
 
     public static Double fromYenToRenminbi(Double yens){
-        return null;
+        return yens * (0.065 / 1.0);
     }
 
 
